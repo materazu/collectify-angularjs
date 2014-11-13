@@ -2,13 +2,13 @@
 
 <ul>
     <li><a href="#/">Index</a></li>
+    <li><a href="#/items">List of items</a></li>
     <li><a href="#/items/new">Create new items</a></li>
-    <li><a href="#/categories">List of categories</a></li>
     <li><a href="#/categories/new">Create new categories</a></li>
 </ul>
 
 <div id="container">
-    <div ng-repeat="item in items">
-        <decorate-item></decorate-item>
+    <div ng-repeat="category in categories">
+        <decorate-category></decorate-category>
     </div>
 </div>

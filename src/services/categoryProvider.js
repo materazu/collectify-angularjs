@@ -9,4 +9,11 @@ app.service('categoryProvider', function () {
     this.getCategories = function () {
         return categories;
     }
+
+    this.create = function (category) {
+        category['id'] = categories.length + 1;
+        categories.push(category);
+
+        return items;
+    }
 });

@@ -15,5 +15,13 @@ app.config(
                 controller: 'itemCreate',
                 templateUrl: 'views/item/create.html'
             })
+            .when('/categories/', {
+                controller: 'categoryList',
+                templateUrl: 'views/category/list.html'
+            })
+            .when('/categories/new', {
+                controller: 'categoryCreate',
+                templateUrl: 'views/category/create.html'
+            })
     }
 );
